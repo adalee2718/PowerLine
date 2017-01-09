@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/power', function () {
+    return view('power.power');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
